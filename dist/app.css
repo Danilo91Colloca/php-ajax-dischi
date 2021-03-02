@@ -31,6 +31,20 @@
   background-color: #000000;
   margin: 0px auto;
 }
+#app .page-wrapper header nav {
+  height: 100%;
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+}
+#app .page-wrapper header nav .logo-box {
+  width: 50px;
+}
+#app .page-wrapper header nav .logo-box img {
+  width: 100%;
+  border-radius: 50%;
+}
 #app .page-wrapper main {
   width: calc(100% - 120px);
   height: calc(100% - 140px);

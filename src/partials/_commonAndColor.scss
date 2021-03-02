@@ -3,7 +3,10 @@
   padding : 0;
   box-sizing : border-box;
 }
-
+@mixin pageCenter {
+  width : 1200px;
+  margin : 0px auto;
+}
 
 //colors
 $sideBlue : #212d3a;//sidebars

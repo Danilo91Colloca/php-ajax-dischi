@@ -26,6 +26,19 @@
       height : 80px;
       background-color : $blackNavFoot;
       margin : 0px auto;
+      nav {
+        height : 100%;
+        @include pageCenter;
+        display : flex;
+        align-items : center;
+        .logo-box {
+          width : 50px;
+          img {
+            width : 100%;
+            border-radius : 50%;
+          }
+        }
+      }
     }
     main {
       width : calc(100% - 120px);
