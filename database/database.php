@@ -121,3 +121,6 @@ $data = [
     'imgFront' => 'images/leAcrobate.jpeg'
   ]
 ];
+
+header('Content-Type: applications/json');
+echo json_encode($data);
