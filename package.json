@@ -1,0 +1,26 @@
+{
+  "name": "php-ajax-dischi",
+  "version": "1.0.0",
+  "description": "#Boolean - DISCHI Exercise Structure Questa è la struttura base per l'esercizio dove i ragazzi affronteranno lo sviluppo di frontend e backend con chiamata ajax.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danilo91Colloca/php-ajax-dischi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danilo91Colloca/php-ajax-dischi/issues"
+  },
+  "homepage": "https://github.com/Danilo91Colloca/php-ajax-dischi#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.13",
+    "postcss": "^8.2.6",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
+  }
+}

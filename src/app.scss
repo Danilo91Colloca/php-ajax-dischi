@@ -1,0 +1,42 @@
+@import "partials/_commonAndColor";
+#app {
+  .page-wrapper {
+    width : 100vw;
+    max-width : 100%;
+    height : 100vh;
+    position : relative;
+    .side {
+      width : 60px;
+      height : calc(100% - 60px);
+      background-color : $sideBlue;
+      &.left {
+        position : absolute;
+        left : 0;
+        top : 0;
+      }
+      &.right {
+        position : absolute;
+        right : 0;
+        top : 0;
+      }
+
+    }
+    header {
+      width : calc(100% - 120px);
+      height : 80px;
+      background-color : $blackNavFoot;
+      margin : 0px auto;
+    }
+    main {
+      width : calc(100% - 120px);
+      height : calc(100% - 140px);
+      margin : 0px auto;
+      background-color: $veryDarkGray;
+    }
+    footer {
+      width : 100%;
+      height : 60px;
+      background-color : $blackNavFoot;
+    }
+  }
+}
