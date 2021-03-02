@@ -34,18 +34,24 @@
           <div class="main-centerPage">
             <div class="cardsContainer">
               <!--ALBUM CARDS LAYOUT-->
-              <div class="albumCard-box">
+              <div class="albumCard-box" v-for="details in diskList">
                 <div class="album-img">
-                  <img src="" alt="">
+                  <img :src="details.imgFront" alt="">
                 </div>
                 <div class="album-title">
-                  <span> </span>
+                  <span> 
+                    {{details.title}}
+                  </span>
                 </div>
                 <div class="artist">
-                  <span></span>
+                  <span>
+                    {{details.artist}}
+                  </span>
                 </div>
                 <div class="year">
-                  <span></span>
+                  <span>
+                    {{details.year}}
+                  </span>
                 </div>
               </div>
             </div>
