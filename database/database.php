@@ -2,7 +2,7 @@
 $data = [
   [
     'title' =>  'New Jersey',
-    'year'  => '1988',
+    'year'  => 1988,
     'artist' => 'Bon Jovi',
     'label' =>  'Mercury Records',
     'genre' => 'hard rock',
@@ -10,7 +10,7 @@ $data = [
   ],
   [
     'title' =>  'Live at Webley \'86',
-    'year'  => '1992',
+    'year'  => 1992,
     'artist' => 'Queen',
     'label' =>  'EMI/Parlophone',
     'genre' => 'rock',
@@ -18,7 +18,7 @@ $data = [
   ],
   [
     'title' =>  'Ten Summoner\'s Tales',
-    'year'  => '1993',
+    'year'  => 1993,
     'artist' => 'Sting',
     'label' =>  'A&M',
     'genre' => 'pop rock',
@@ -26,7 +26,7 @@ $data = [
   ],
   [
     'title' =>  'Steve Gadd Band',
-    'year'  => '2018',
+    'year'  => 2018,
     'artist' => 'Steve Gadd Band',
     'label' =>  'BFM Jazz',
     'genre' => 'jazz',
@@ -34,7 +34,7 @@ $data = [
   ],
   [
     'title' =>  'Brave New World',
-    'year'  => '2000',
+    'year'  => 2000,
     'artist' => 'Iron Maiden',
     'label' =>  'EMI',
     'genre' => 'heavy metal',
@@ -42,7 +42,7 @@ $data = [
   ],
   [
     'title' =>  'One More Car, One More Rider',
-    'year'  => '2002',
+    'year'  => 2002,
     'artist' => 'Eric Clapton',
     'label' =>  'Duck/Reprise',
     'genre' => 'blues',
@@ -50,7 +50,7 @@ $data = [
   ],
   [
     'title' =>  'T.N.T.',
-    'year'  => '1975',
+    'year'  => 1975,
     'artist' => 'AC/DC',
     'label' =>  'Albert',
     'genre' => 'hard rick',
@@ -58,7 +58,7 @@ $data = [
   ],
   [
     'title' =>  'Nevermind',
-    'year'  => '1991',
+    'year'  => 1991,
     'artist' => 'Nirvana',
     'label' =>  'BGC',
     'genre' => 'grunge',
@@ -66,7 +66,7 @@ $data = [
   ],
   [
     'title' =>  'Back to Black',
-    'year'  => '2006',
+    'year'  => 2006,
     'artist' => 'Amy Winehouse',
     'label' =>  'Island',
     'genre' => 'neo soul',
@@ -74,7 +74,7 @@ $data = [
   ],
   [
     'title' =>  'Nuovo Cinema Paradiso',
-    'year'  => '1988',
+    'year'  => 1988,
     'artist' => 'Ennio Morricone',
     'label' =>  'Mercury',
     'genre' => 'film score',
@@ -82,7 +82,7 @@ $data = [
   ],
   [
     'title' =>  'Cuz I Love You',
-    'year'  => '2019',
+    'year'  => 2019,
     'artist' => 'Lizzo',
     'label' =>  'Atlantic',
     'genre' => 'soul',
@@ -90,7 +90,7 @@ $data = [
   ],
   [
     'title' =>  'Black Radio',
-    'year'  => '2012',
+    'year'  => 2012,
     'artist' => 'Robert Glasper',
     'label' =>  'Blue Note Records',
     'genre' => 'R&B',
@@ -98,7 +98,7 @@ $data = [
   ],
   [
     'title' =>  'Texas Flood',
-    'year'  => '1983',
+    'year'  => 1983,
     'artist' => 'Steve Ray Vaughan',
     'label' =>  'Epic',
     'genre' => 'blues',
@@ -106,7 +106,7 @@ $data = [
   ],
   [
     'title' =>  'Tron Legacy',
-    'year'  => '2010',
+    'year'  => 2010,
     'artist' => 'Daft Punk',
     'label' =>  'Walt Disney',
     'genre' => 'film score',
@@ -114,13 +114,13 @@ $data = [
   ],
   [
     'title' =>  'Le Acrobate',
-    'year'  => '1991',
+    'year'  => 1991,
     'artist' => 'Giovanni Venosta',
     'label' =>  'CAM',
     'genre' => 'film score',
     'imgFront' => 'images/leAcrobate.jpeg'
   ]
 ];
-
+header('Access-Control-Allow-Origin: *');
 header('Content-Type: applications/json');
 echo json_encode($data);

@@ -6,9 +6,9 @@ new Vue({
   },
   mounted(){ 
     const self = this; 
-    axios.get('http://localhost:8888/php-ajax-dischi/app')
-    .then(function(queryReturn){
-     self.diskList = queryReturn.data.response;
+    axios.get('http://localhost:8888/php-ajax-dischi/app/server.php')
+    .then(function(response){
+     self.diskList = response.data;
     });
    },
   methods : {
