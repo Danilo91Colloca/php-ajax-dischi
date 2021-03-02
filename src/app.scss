@@ -19,8 +19,7 @@
         right : 0;
         top : 0;
       }
-
-    }
+    }// end side
     header {
       width : calc(100% - 120px);
       height : 80px;
@@ -38,8 +37,8 @@
             border-radius : 50%;
           }
         }
-      }
-    }
+      }//end nav
+    }// end header
     main {
       width : calc(100% - 120px);
       height : calc(100% - 140px);
@@ -49,7 +48,6 @@
       .main-centerPage {
         @include pageCenter;
         padding-top : 80px;
-
         .cardsContainer {
           width : 100%;
           @include clearfix;
@@ -94,5 +92,5 @@
       height : 60px;
       background-color : $blackNavFoot;
     }
-  }
-}
+  }//end page wrapper
+}//end app

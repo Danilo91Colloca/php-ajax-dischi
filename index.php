@@ -1,11 +1,8 @@
+<!-- apro un canale di comunicazione con il database -->
 <?php
-
 require_once 'database/database.php';
-
-
-
-
 ?>
+<!-- pagina HTML visibile all'utente -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,6 +20,7 @@ require_once 'database/database.php';
         </div>
         <div class="side right">
         </div>
+        <!-- HEADER SECTION -->
         <header>
           <nav>
             <div class="logo-box">
@@ -30,10 +28,12 @@ require_once 'database/database.php';
             </div>
           </nav>
         </header>
+        <!--/ HEADER SECTION -->
+        <!-- MAIN SECTION -->
         <main>
           <div class="main-centerPage">
-            
             <div class="cardsContainer">
+              <!-- foreach creerà tante cards per quanti dati arriveranno dal database -->
               <?php 
                 foreach($data as  $key => $item){
               ?>
@@ -56,16 +56,21 @@ require_once 'database/database.php';
               <?php 
               }
               ?>
-
+              <!-- chiusura foreach -->
             </div>
-            
-            
+            <!-- / cardsContainer -->
           </div>
+          <!-- / main-centerPage -->
         </main>
+        <!-- / MAIN SECTION -->
+        <!-- FOOTER SECTION -->
         <footer>
+          <!-- is empty -->
         </footer>
+        <!--/ FOOTER SECTION -->
       </div>
+      <!-- / PAGE WRAPPER -->
     </div>
-    
+    <!-- / APP SECTION -->
   </body>
 </html>
