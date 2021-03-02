@@ -49,35 +49,44 @@
       .main-centerPage {
         @include pageCenter;
         padding-top : 80px;
-        width : calc((1200px/ 12) * 6);
-        display : flex;
-        justify-content: space-between;
-        flex-wrap : wrap;
-        //TODO===> stabilire quante card per ogni row
-        .albumCard-box {
-          display : inline-block;
-          width : 180px;
-          height : 260px;
-          background-color : $blackNavFoot;
-          padding : 15px;
-          .album-img {
-            margin : 0px auto;
-            width : 150px;
-            height : 150px;
-            img {
-              width : 100%;
+
+        .cardsContainer {
+          width : 100%;
+          @include clearfix;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .albumCard-box {
+            margin-right : 30px;
+            width : 280px;
+            height : 380px;
+            background-color : $blackNavFoot;
+            padding : 15px;
+            margin-bottom : 15px;
+            .album-img {
+              margin : 0px auto;
+              width : 250px;
+              height : 250px;
+              img {
+                width : 100%;
+              }
+              margin-bottom : 15px;
             }
-          }
-          .album-title {
-            color : $veryLightGray;
-          }
-          .artist {
-            color : $darkGray;
-          }
-          .year {
-            color : $veryLightGray;
-          }
-        }//albumCard-box
+            .album-title {
+              text-align: center;
+              color : $veryLightGray;
+              margin-bottom : 15px;
+            }
+            .artist {
+              text-align: center;
+              color : $darkGray;
+            }
+            .year {
+              text-align: center;
+              color : $veryLightGray;
+            }
+          }//albumCard-box
+        }
       }//main-centerPage
     } //main
     footer {

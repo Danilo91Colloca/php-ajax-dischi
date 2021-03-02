@@ -7,6 +7,11 @@
   width : 1200px;
   margin : 0px auto;
 }
+@mixin clearfix {
+  content : '';
+  display : table;
+  clear : both;
+}
 
 //colors
 $sideBlue : #212d3a;//sidebars

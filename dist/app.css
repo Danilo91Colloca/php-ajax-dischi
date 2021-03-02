@@ -56,33 +56,44 @@
   width: 1200px;
   margin: 0px auto;
   padding-top: 80px;
-  width: calc((1200px/ 12) * 6);
+}
+#app .page-wrapper main .main-centerPage .cardsContainer {
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#app .page-wrapper main .main-centerPage .albumCard-box {
-  display: inline-block;
-  width: 180px;
-  height: 260px;
+#app .page-wrapper main .main-centerPage .cardsContainer .albumCard-box {
+  margin-right: 30px;
+  width: 280px;
+  height: 380px;
   background-color: #000000;
   padding: 15px;
+  margin-bottom: 15px;
 }
-#app .page-wrapper main .main-centerPage .albumCard-box .album-img {
+#app .page-wrapper main .main-centerPage .cardsContainer .albumCard-box .album-img {
   margin: 0px auto;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
 }
-#app .page-wrapper main .main-centerPage .albumCard-box .album-img img {
+#app .page-wrapper main .main-centerPage .cardsContainer .albumCard-box .album-img img {
   width: 100%;
 }
-#app .page-wrapper main .main-centerPage .albumCard-box .album-title {
+#app .page-wrapper main .main-centerPage .cardsContainer .albumCard-box .album-title {
+  text-align: center;
   color: #e2e2e2;
+  margin-bottom: 15px;
 }
-#app .page-wrapper main .main-centerPage .albumCard-box .artist {
+#app .page-wrapper main .main-centerPage .cardsContainer .albumCard-box .artist {
+  text-align: center;
   color: #6a6a6a;
 }
-#app .page-wrapper main .main-centerPage .albumCard-box .year {
+#app .page-wrapper main .main-centerPage .cardsContainer .albumCard-box .year {
+  text-align: center;
   color: #e2e2e2;
 }
 #app .page-wrapper footer {
