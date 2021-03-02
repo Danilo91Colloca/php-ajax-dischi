@@ -73,6 +73,14 @@ $data = [
     'imgFront' => 'images/backToBlack.png'
   ],
   [
+    'title' =>  'Nuovo Cinema Paradiso',
+    'year'  => '1988',
+    'artist' => 'Ennio Morricone',
+    'label' =>  'Mercury',
+    'genre' => 'film score',
+    'imgFront' => 'images/nuovoCinemaParadiso.jpeg'
+  ],
+  [
     'title' =>  'Cuz I Love You',
     'year'  => '2019',
     'artist' => 'Lizzo',
@@ -105,11 +113,11 @@ $data = [
     'imgFront' => 'images/tronLegacy.jpg'
   ],
   [
-    'title' =>  'Nuovo Cinema Paradiso',
-    'year'  => '1988',
-    'artist' => 'Ennio Morricone',
-    'label' =>  'Mercury',
+    'title' =>  'Le Acrobate',
+    'year'  => '1991',
+    'artist' => 'Giovanni Venosta',
+    'label' =>  'CAM',
     'genre' => 'film score',
-    'imgFront' => 'images/nuovoCinemaParadiso.jpeg'
+    'imgFront' => 'images/leAcrobate.jpeg'
   ]
 ];

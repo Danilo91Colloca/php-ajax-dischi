@@ -45,6 +45,7 @@
       height : calc(100% - 140px);
       margin : 0px auto;
       background-color: $veryDarkGray;
+      overflow-y : scroll;
       .main-centerPage {
         @include pageCenter;
         padding-top : 80px;
@@ -66,6 +67,15 @@
             img {
               width : 100%;
             }
+          }
+          .album-title {
+            color : $veryLightGray;
+          }
+          .artist {
+            color : $darkGray;
+          }
+          .year {
+            color : $veryLightGray;
           }
         }//albumCard-box
       }//main-centerPage

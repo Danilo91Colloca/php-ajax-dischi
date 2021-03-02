@@ -50,6 +50,7 @@
   height: calc(100% - 140px);
   margin: 0px auto;
   background-color: #191919;
+  overflow-y: scroll;
 }
 #app .page-wrapper main .main-centerPage {
   width: 1200px;
@@ -74,6 +75,15 @@
 }
 #app .page-wrapper main .main-centerPage .albumCard-box .album-img img {
   width: 100%;
+}
+#app .page-wrapper main .main-centerPage .albumCard-box .album-title {
+  color: #e2e2e2;
+}
+#app .page-wrapper main .main-centerPage .albumCard-box .artist {
+  color: #6a6a6a;
+}
+#app .page-wrapper main .main-centerPage .albumCard-box .year {
+  color: #e2e2e2;
 }
 #app .page-wrapper footer {
   width: 100%;
