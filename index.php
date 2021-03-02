@@ -1,6 +1,6 @@
 <!-- apro un canale di comunicazione con il database -->
 <?php
-require_once 'database/database.php';
+  require_once 'database/database.php';
 ?>
 <!-- pagina HTML visibile all'utente -->
 <!DOCTYPE html>
