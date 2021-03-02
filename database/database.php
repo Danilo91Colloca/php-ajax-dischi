@@ -6,7 +6,7 @@ $data = [
     'artist' => 'Bon Jovi',
     'label' =>  'Mercury Records',
     'genre' => 'hard rock',
-    'imgFront' => '../images/newJersey.jpg'
+    'imgFront' => 'images/newJersey.jpg'
   ],
   [
     'title' =>  'Live at Webley \'86',
@@ -14,7 +14,7 @@ $data = [
     'artist' => 'Queen',
     'label' =>  'EMI/Parlophone',
     'genre' => 'rock',
-    'imgFront' => '../images/liveAtWembley86.png'
+    'imgFront' => 'images/liveAtWembley86.png'
   ],
   [
     'title' =>  'Ten Summoner\'s Tales',
@@ -22,7 +22,7 @@ $data = [
     'artist' => 'Sting',
     'label' =>  'A&M',
     'genre' => 'pop rock',
-    'imgFront' => '../images/tensSummonersTales.png'
+    'imgFront' => 'images/tensSummonersTales.png'
   ],
   [
     'title' =>  'Steve Gadd Band',
@@ -30,7 +30,7 @@ $data = [
     'artist' => 'Steve Gadd Band',
     'label' =>  'BFM Jazz',
     'genre' => 'jazz',
-    'imgFront' => '../images/steveGaddBand.jpeg'
+    'imgFront' => 'images/steveGaddBand.jpeg'
   ],
   [
     'title' =>  'Brave New World',
@@ -38,7 +38,7 @@ $data = [
     'artist' => 'Iron Maiden',
     'label' =>  'EMI',
     'genre' => 'heavy metal',
-    'imgFront' => '../images/braveNewWorld.jpg'
+    'imgFront' => 'images/braveNewWorld.jpg'
   ],
   [
     'title' =>  'One More Car, One More Rider',
@@ -46,7 +46,7 @@ $data = [
     'artist' => 'Eric Clapton',
     'label' =>  'Duck/Reprise',
     'genre' => 'blues',
-    'imgFront' => '../images/oneMoreCar.jpg'
+    'imgFront' => 'images/oneMoreCar.jpg'
   ],
   [
     'title' =>  'T.N.T.',
@@ -54,7 +54,7 @@ $data = [
     'artist' => 'AC/DC',
     'label' =>  'Albert',
     'genre' => 'hard rick',
-    'imgFront' => '../images/tnt.jpg'
+    'imgFront' => 'images/tnt.jpg'
   ],
   [
     'title' =>  'Nevermind',
@@ -62,7 +62,7 @@ $data = [
     'artist' => 'Nirvana',
     'label' =>  'BGC',
     'genre' => 'grunge',
-    'imgFront' => '../images/nevermind.jpg'
+    'imgFront' => 'images/nevermind.jpg'
   ],
   [
     'title' =>  'Back to Black',
@@ -70,7 +70,7 @@ $data = [
     'artist' => 'Amy Winehouse',
     'label' =>  'Island',
     'genre' => 'neo soul',
-    'imgFront' => '../images/backToBlack.png'
+    'imgFront' => 'images/backToBlack.png'
   ],
   [
     'title' =>  'Cuz I Love You',
@@ -78,7 +78,7 @@ $data = [
     'artist' => 'Lizzo',
     'label' =>  'Atlantic',
     'genre' => 'soul',
-    'imgFront' => '../images/cuzILoveYou.png'
+    'imgFront' => 'images/cuzILoveYou.png'
   ],
   [
     'title' =>  'Black Radio',
@@ -86,7 +86,7 @@ $data = [
     'artist' => 'Robert Glasper',
     'label' =>  'Blue Note Records',
     'genre' => 'R&B',
-    'imgFront' => '../images/blackRadio.jpg'
+    'imgFront' => 'images/blackRadio.jpg'
   ],
   [
     'title' =>  'Texas Flood',
@@ -94,7 +94,7 @@ $data = [
     'artist' => 'Steve Ray Vaughan',
     'label' =>  'Epic',
     'genre' => 'blues',
-    'imgFront' => '../images/texasFlood.jpg'
+    'imgFront' => 'images/texasFlood.jpg'
   ],
   [
     'title' =>  'Tron Legacy',
@@ -102,7 +102,7 @@ $data = [
     'artist' => 'Daft Punk',
     'label' =>  'Walt Disney',
     'genre' => 'film score',
-    'imgFront' => '../images/tronLegacy.jpg'
+    'imgFront' => 'images/tronLegacy.jpg'
   ],
   [
     'title' =>  'Nuovo Cinema Paradiso',
@@ -110,6 +110,6 @@ $data = [
     'artist' => 'Ennio Morricone',
     'label' =>  'Mercury',
     'genre' => 'film score',
-    'imgFront' => '../images/nuovoCinemaParadiso.jpeg'
+    'imgFront' => 'images/nuovoCinemaParadiso.jpeg'
   ]
 ];

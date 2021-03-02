@@ -31,6 +31,34 @@ require_once 'database/database.php';
           </nav>
         </header>
         <main>
+          <div class="main-centerPage">
+            <?php 
+              foreach($data as  $key => $item){
+              
+            ?>
+
+            <!--ALBUM CARDS LAYOUT-->
+            <div class="albumCard-box">
+              <div class="album-img">
+                <img src="<?php echo $item['imgFront']?>" alt="">
+              </div>
+              <div class="album-title">
+                <span><?php echo $item['title'] ?> </span>
+              </div>
+              <div class="artist">
+                <span><?php echo $item['artist'] ?></span>
+              </div>
+              <div class="year">
+                <span><?php echo $item['year']?></span>
+              </div>
+            </div>
+            <!--ALBUM CARDS LAYOUT-->
+            <?php 
+              }
+            ?>
+
+          </div>
+          
         </main>
         <footer>
         </footer>
