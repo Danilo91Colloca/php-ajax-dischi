@@ -37,6 +37,7 @@
   margin: 0px auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 #app .page-wrapper header nav .logo-box {
   width: 50px;
@@ -44,6 +45,16 @@
 #app .page-wrapper header nav .logo-box img {
   width: 100%;
   border-radius: 50%;
+}
+#app .page-wrapper header nav .nav-rightSide {
+  display: flex;
+}
+#app .page-wrapper header nav .nav-rightSide .select-genre select {
+  margin-right: 15px;
+  text-transform: capitalize;
+}
+#app .page-wrapper header nav .nav-rightSide .search input {
+  padding-left: 5px;
 }
 #app .page-wrapper main {
   width: calc(100% - 120px);

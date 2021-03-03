@@ -30,11 +30,26 @@
         @include pageCenter;
         display : flex;
         align-items : center;
+        justify-content : space-between;
         .logo-box {
           width : 50px;
           img {
             width : 100%;
             border-radius : 50%;
+          }
+        }
+        .nav-rightSide {
+          display : flex;
+          .select-genre {
+            select {
+              margin-right : 15px;
+              text-transform : capitalize;
+            }
+          }
+          .search {
+            input {
+              padding-left : 5px;
+            }
           }
         }
       }//end nav

@@ -53,7 +53,7 @@ $data = [
     'year'  => 1975,
     'artist' => 'AC/DC',
     'label' =>  'Albert',
-    'genre' => 'hard rick',
+    'genre' => 'hard rock',
     'imgFront' => 'images/tnt.jpg'
   ],
   [

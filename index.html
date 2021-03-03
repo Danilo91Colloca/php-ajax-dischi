@@ -26,6 +26,20 @@
             <div class="logo-box">
               <img src="images/spotify-logo.png" alt="">
             </div>
+            <div class="nav-rightSide">
+              <div class="select-genre">
+                <select name="" id="" v-model="userSelect">
+                  <option disable value="">select your genre</option>
+                  <option value="All">all</option>
+                  <option  v-for="genre in genresList" :value="genre" >
+                    {{genre}}
+                  </option>
+                </select>
+              </div>
+              <div class="search">
+                <input type="text" placeholder="search by genre" v-model="userTypeInput">
+              </div>
+            </div>
           </nav>
         </header>
         <!--/ HEADER SECTION -->
