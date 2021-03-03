@@ -28,7 +28,7 @@
             </div>
             <div class="nav-rightSide">
               <div class="select-genre">
-                <select name="" id="" v-model="userSelect" @change="selectByGenre()">
+                <select name="" id="" v-model="userSelect" @change="genreBySelect()">
                   <option disabled value="">select your genre</option>
                   <option value="0">all</option>
                   <option  v-for="genre in genresList" :value="genre" >
@@ -37,7 +37,7 @@
                 </select>
               </div>
               <div class="search">
-                <input type="text" placeholder="search by genre" >
+                <input type="text" placeholder="search by genre" v-model="userTypeInput" @keyup="genreByInput">
               </div>
             </div>
           </nav>

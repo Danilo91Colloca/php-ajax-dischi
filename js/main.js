@@ -4,6 +4,7 @@ new Vue({
     diskList : [],
     genresList : [],
     userSelect : '',
+    userTypeInput : '',
     apiKey : "genre"
 
   },
@@ -28,12 +29,19 @@ new Vue({
       })
       this.genresList = newArray;
     },
-    selectByGenre : function(){
+    genreBySelect : function(){
       let self = this;
       axios.get('http://localhost:8888/php-ajax-dischi/app/server.php?' + this.apiKey + "=" + this.userSelect)
-    .then(function(response){
-     self.diskList = response.data;
-    });
+      .then(function(response){
+      self.diskList = response.data;
+      });
+    },
+    genreByInput : function(){
+      let self = this;
+      axios.get('http://localhost:8888/php-ajax-dischi/app/server.php?' + this.apiKey + "=" + this.userTypeInput)
+      .then(function(response){
+      self.diskList = response.data;
+      });
     }
     
   }
