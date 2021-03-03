@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/spotify-favicon.png" type="image/x-icon" size="32x32" >
     <title>Milestone1-dischiPHP-DC</title>
-    <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
     <div id="app">
