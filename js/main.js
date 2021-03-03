@@ -6,7 +6,8 @@ new Vue({
     userSelect : '',
     userTypeInput : '',
     apiGenre : 'genre',
-    apiArtist : 'artist'
+    apiArtist : 'artist',
+    apiTitle : 'title'
 
   },
   mounted(){ 
@@ -50,6 +51,18 @@ new Vue({
       .then(function(response){
       self.diskList = response.data;
       });
+    },
+    titleByInput : function(){
+      let self = this;
+      axios.get('http://localhost:8888/php-ajax-dischi/app/server.php?' + this.apiTitle + "=" + this.userTypeInput)
+      .then(function(response){
+      self.diskList = response.data;
+      });
+    },
+    allSearch : function(){
+      this.artistByInput();
+      this.titleByInput();
+      this.genreByInput();
     }
     
   }

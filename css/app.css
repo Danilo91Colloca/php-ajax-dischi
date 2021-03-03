@@ -55,6 +55,7 @@
 }
 #app .page-wrapper header nav .nav-rightSide .search input {
   padding-left: 5px;
+  width: 250px;
 }
 #app .page-wrapper main {
   width: calc(100% - 120px);
