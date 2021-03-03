@@ -29,8 +29,8 @@
             <div class="nav-rightSide">
               <div class="select-genre">
                 <select name="" id="" v-model="userSelect" @change="selectByGenre()">
-                  <option disable value="">select your genre</option>
-                  <option value="All">all</option>
+                  <option disabled value="">select your genre</option>
+                  <option value="0">all</option>
                   <option  v-for="genre in genresList" :value="genre" >
                     {{genre}}
                   </option>
