@@ -121,6 +121,5 @@ $data = [
     'imgFront' => 'images/leAcrobate.jpeg'
   ]
 ];
-header('Access-Control-Allow-Origin: *');
 header('Content-Type: applications/json');
 echo json_encode($data);
