@@ -8,6 +8,12 @@ if(array_key_exists('genre', $_GET) && !empty($_GET['genre'])){
     return (strpos(strtolower($queryValue['genre']), $query) !== false);
   });   
 };
+if(array_key_exists('artist', $_GET) && !empty($_GET['artist'])){
+  $query = strtolower($_GET['artist']);
+  $data = array_filter($data, function ($queryValue) use ($query) {
+    return (strpos(strtolower($queryValue['artist']), $query) !== false);
+  });   
+};
 
 
 header('Content-Type: applications/json');

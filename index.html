@@ -37,7 +37,7 @@
                 </select>
               </div>
               <div class="search">
-                <input type="text" placeholder="search by genre" v-model="userTypeInput" @keyup="genreByInput">
+                <input type="text" placeholder="search by genre" v-model="userTypeInput" @keyup="genreByInput(), artistByInput()">
               </div>
             </div>
           </nav>
