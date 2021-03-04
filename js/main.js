@@ -50,12 +50,10 @@ new Vue({
       self.diskList = response.data;
       })
       .catch(function(error){ //debug
-        setTimeout(function(){
-          if(self.diskList.length > 0) {
-            self.diskList = response.data;
-          }
-        }, 2000);
-       self.errorDetected = true
+        if(error) {
+          self.errorDetected = true
+          self.userTypeInput = "";
+        } 
       })
     },
     artistByInput : function(){
