@@ -49,10 +49,14 @@ new Vue({
       .then(function(response){
       self.diskList = response.data;
       })
-      .catch(function(error){
-        self.errorDetected = true
-       });
-     
+      .catch(function(error){ //debug
+        setTimeout(function(){
+          if(self.diskList.length > 0) {
+            self.diskList = response.data;
+          }
+        }, 2000);
+       self.errorDetected = true
+      })
     },
     artistByInput : function(){
       let self = this;
@@ -69,9 +73,13 @@ new Vue({
       });
     },
     everySearchByInput : function(){
-      this.artistByInput();
-      this.titleByInput();
-      this.genreByInput();
+      if(this.userTypeInput !== '') {
+        this.artistByInput();
+        this.titleByInput();
+        this.genreByInput();
+      } else {
+        this.allIsSelected()
+      }
     },
     allIsSelected : function() {
         const self = this; 
@@ -90,9 +98,7 @@ new Vue({
       // self.errorDetected = false;
       // });
       this.errorDetected = false;
-
     }
-    
   }
 });
 Vue.config.devtools = true;
