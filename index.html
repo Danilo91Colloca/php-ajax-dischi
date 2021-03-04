@@ -30,22 +30,28 @@
               <div class="select-genre">
                 <select name="" id="" v-model="userSelect" @change="genreBySelect()">
                   <option disabled value="">select your genre</option>
-                  <option value="0">all</option>
+                  <option value="all">all</option>
                   <option  v-for="genre in genresList" :value="genre" >
                     {{genre}}
                   </option>
                 </select>
               </div>
               <div class="search">
-                <input type="text" placeholder="search by genre, artist, title" v-model="userTypeInput" @keyup="allSearch()">
+                <input type="text" placeholder="search by genre, artist, title" v-model="userTypeInput" @keyup="everySearchByInput()">
               </div>
             </div>
           </nav>
         </header>
         <!--/ HEADER SECTION -->
         <!-- MAIN SECTION -->
+        
         <main>
+          
           <div class="main-centerPage">
+            <div class="error" v-if="errorDetected === true">
+              <h1>Ops! si è verificato un errore!</h1>
+              <button @click="reload()">Click to Reload</button>
+            </div>
             <div class="cardsContainer">
               <!--ALBUM CARDS LAYOUT-->
               <div class="albumCard-box" v-for="details in diskList">

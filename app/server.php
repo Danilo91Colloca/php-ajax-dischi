@@ -8,6 +8,7 @@ if(array_key_exists('genre', $_GET) && !empty($_GET['genre'])){
     return strpos(strtolower($queryValue['genre']), $query) !== false;
   });   
 };
+
 //filtra per artist
 if(array_key_exists('artist', $_GET) && !empty($_GET['artist'])){
   $query = strtolower($_GET['artist']);
@@ -22,6 +23,12 @@ if(array_key_exists('title', $_GET) && !empty($_GET['title'])){
     return strpos(strtolower($queryValue['title']), $query) !== false;
   });   
 };
+
+if(array_key_exists('genre', $_GET) && empty($_GET['genre']) || count($data) == 0) {
+  http_response_code(400);
+  exit();
+}
+
 
 
 header('Content-Type: applications/json');

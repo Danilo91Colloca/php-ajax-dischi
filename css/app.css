@@ -68,6 +68,17 @@
   width: 1200px;
   margin: 0px auto;
   padding-top: 80px;
+  position: relative;
+}
+#app .page-wrapper main .main-centerPage .error {
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  background-image: url("../images/error.png");
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }
 #app .page-wrapper main .main-centerPage .cardsContainer {
   width: 100%;

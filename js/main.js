@@ -7,7 +7,8 @@ new Vue({
     userTypeInput : '',
     apiGenre : 'genre',
     apiArtist : 'artist',
-    apiTitle : 'title'
+    apiTitle : 'title',
+    errorDetected : false
 
   },
   mounted(){ 
@@ -36,14 +37,19 @@ new Vue({
       axios.get('http://localhost:8888/php-ajax-dischi/app/server.php?' + this.apiGenre + "=" + this.userSelect)
       .then(function(response){
       self.diskList = response.data;
-      });
+      })
+      
     },
     genreByInput : function(){
       let self = this;
       axios.get('http://localhost:8888/php-ajax-dischi/app/server.php?' + this.apiGenre + "=" + this.userTypeInput)
       .then(function(response){
       self.diskList = response.data;
-      });
+      })
+      .catch(function(error){
+        self.errorDetected = true
+       });
+     
     },
     artistByInput : function(){
       let self = this;
@@ -59,10 +65,21 @@ new Vue({
       self.diskList = response.data;
       });
     },
-    allSearch : function(){
+    everySearchByInput : function(){
       this.artistByInput();
       this.titleByInput();
       this.genreByInput();
+    },
+    reload : function(){
+      // const self = this; 
+      // axios.get('http://localhost:8888/php-ajax-dischi/app/server.php')
+      // .then(function(response){
+      // self.diskList = response.data;
+      // self.getGenres(response.data);
+      // self.errorDetected = false;
+      // });
+      this.errorDetected = false;
+
     }
     
   }
